@@ -1,6 +1,7 @@
 {
   "name": "dev-duel",
   "main": "/server/index.js",
+  "type": "module",
   "scripts": {
     "serve": "concurrently \"npm run serve-api\" \"npm run start-client\"",
     "serve-api": "nodemon -w ./server --exec \"babel-node server\"",
